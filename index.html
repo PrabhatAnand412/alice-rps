@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ultimate Rock, Paper, Scissors with APIs and Haptics.">
+    <title>Ultimate RPS | API Edition</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <main class="game-board">
+        <header>
+            <h1>Rock, Paper, Scissors</h1>
+            <div class="scoreboard" aria-live="polite">
+                <div class="score">Player: <span id="player-score">0</span></div>
+                <div class="score">Alice: <span id="bot-score">0</span></div>
+            </div>
+        </header>
+        
+        <section class="arena" aria-hidden="true">
+            <div class="player-side">
+                <h2>You</h2>
+                <div id="player-choice" class="choice-display">✊</div>
+            </div>
+            
+            <div class="bot-side">
+                <h2>Alice</h2>
+                <div id="bot-choice" class="choice-display">✊</div>
+            </div>
+        </section>
+
+        <p id="result-message" aria-live="assertive">Choose your hand sign!</p>
+
+        <nav class="controls" id="controls-container">
+            <button class="action-btn" data-move="Rock" aria-label="Play Rock">✊</button>
+            <button class="action-btn" data-move="Paper" aria-label="Play Paper">✋</button>
+            <button class="action-btn" data-move="Scissors" aria-label="Play Scissors">✌️</button>
+        </nav>
+
+        <button id="reset-btn" aria-label="Reset the game">Reset Game</button>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
