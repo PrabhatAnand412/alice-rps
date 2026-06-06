@@ -3,7 +3,7 @@
 A modern, fully animated Rock, Paper, Scissors web game built with vanilla technologies. Play against Alice, an AI opponent with dynamic reactions and custom UI/UX.
 
 ## 🎮 Play the Game
-[Live Demo Link will go here]
+[https://alice-rps-game.netlify.app/]
 
 ## ✨ Features
 * **Animated UI:** Smooth CSS keyframe animations for gameplay elements.
